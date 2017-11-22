@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <title> Maria's First Webpage</title>
+</head>
+
+<body>
+<h1>
+    <button onclick="myFunction()">Click Here</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var txt;
+            var person=prompt ("Please enter your name:");
+            if (person==null || person ==""){
+                txt="The option was cancelled";
+            } else {
+                txt = "Welcome " + person;
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</h1>
+<header>
+    <h1>Maria's First Webpage</h1>
+
+    <nav>
+        <ul>
+            <li> <a href="shipmanwebpage.html">About</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container-grid">
+        <div class="col-1">
+            <h2>Welcome to my first webpage</h2>
+        </div>
+        <div class="col-2">
+            <img src="IMG_0013.png" alt="Self Bears drawing"
+                 width="250">
+        </div>
+        <div class="col-3">
+            <p>I am a novice at web development and interested to learn more about what the development stages entail.
+                I love developing new skills. </p>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="col-4">
+        <div class="nav">
+            <h3>Sitemap</h3>
+            <ul>
+                <li> <a href="shipmanwebpage.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+</html>
